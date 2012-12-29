@@ -1,4 +1,3 @@
-nanodispenser
+Shaker
 =============
-
-Nano dispensing device
+Sample code for controlling a shaker device.
