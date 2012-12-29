@@ -1,0 +1,1377 @@
+VERSION 5.00
+Object = "{648A5603-2C6E-101B-82B6-000000000014}#1.1#0"; "MSCOMM32.OCX"
+Begin VB.Form BisShaker 
+   BackColor       =   &H00E0E0E0&
+   Caption         =   "BIS Shaker-Vortexer"
+   ClientHeight    =   5595
+   ClientLeft      =   2340
+   ClientTop       =   1770
+   ClientWidth     =   7380
+   Icon            =   "HT91100Test.frx":0000
+   LinkTopic       =   "Form1"
+   ScaleHeight     =   5595
+   ScaleWidth      =   7380
+   Begin MSCommLib.MSComm MSComm2 
+      Left            =   3360
+      Top             =   5040
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      _Version        =   393216
+      DTREnable       =   -1  'True
+   End
+   Begin VB.CommandButton cmdOK 
+      BackColor       =   &H00C0C0C0&
+      Caption         =   "OK"
+      Height          =   615
+      Left            =   5640
+      MaskColor       =   &H00E0E0E0&
+      TabIndex        =   76
+      Top             =   4920
+      Width           =   1575
+   End
+   Begin VB.OptionButton Option2 
+      BackColor       =   &H00C0C0C0&
+      Caption         =   "Comm Port 15"
+      Height          =   255
+      Index           =   14
+      Left            =   240
+      TabIndex        =   74
+      Top             =   4080
+      Width           =   2535
+   End
+   Begin VB.OptionButton Option2 
+      BackColor       =   &H00C0C0C0&
+      Caption         =   "Comm Port 14"
+      Height          =   255
+      Index           =   13
+      Left            =   240
+      TabIndex        =   73
+      Top             =   3840
+      Width           =   2535
+   End
+   Begin VB.OptionButton Option2 
+      BackColor       =   &H00C0C0C0&
+      Caption         =   "Comm Port 13"
+      Height          =   255
+      Index           =   12
+      Left            =   240
+      TabIndex        =   72
+      Top             =   3600
+      Width           =   2535
+   End
+   Begin VB.OptionButton Option2 
+      BackColor       =   &H00C0C0C0&
+      Caption         =   "Comm Port 12"
+      Height          =   255
+      Index           =   11
+      Left            =   240
+      TabIndex        =   71
+      Top             =   3360
+      Width           =   2535
+   End
+   Begin VB.OptionButton Option2 
+      BackColor       =   &H00C0C0C0&
+      Caption         =   "Comm Port 9"
+      Height          =   255
+      Index           =   8
+      Left            =   240
+      TabIndex        =   68
+      Top             =   2640
+      Width           =   2535
+   End
+   Begin VB.Frame Frame9 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Top Speed Adjust"
+      Height          =   3855
+      Left            =   9120
+      TabIndex        =   58
+      Top             =   6960
+      Width           =   1815
+      Begin VB.Timer Timer2 
+         Interval        =   350
+         Left            =   1320
+         Top             =   180
+      End
+      Begin VB.CommandButton Command6 
+         Caption         =   "Done"
+         Height          =   315
+         Left            =   180
+         TabIndex        =   59
+         Top             =   3420
+         Width           =   1455
+      End
+      Begin VB.Label Label9 
+         Alignment       =   2  'Center
+         BackStyle       =   0  'Transparent
+         Caption         =   "R=161"
+         Height          =   195
+         Left            =   60
+         TabIndex        =   61
+         Top             =   1680
+         Width           =   615
+      End
+      Begin VB.Image Image5 
+         Height          =   900
+         Left            =   780
+         Picture         =   "HT91100Test.frx":164A
+         Stretch         =   -1  'True
+         Top             =   1320
+         Width           =   885
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00008000&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   10
+         Left            =   60
+         Top             =   1680
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00008080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   9
+         Left            =   60
+         Top             =   1200
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00008080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   8
+         Left            =   60
+         Top             =   1440
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00008080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   7
+         Left            =   60
+         Top             =   1920
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00008080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   6
+         Left            =   60
+         Top             =   2160
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00000080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   5
+         Left            =   60
+         Top             =   480
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00000080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   4
+         Left            =   720
+         Top             =   3840
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00000080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   3
+         Left            =   60
+         Top             =   960
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00000080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   2
+         Left            =   60
+         Top             =   720
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00000080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   1
+         Left            =   60
+         Top             =   2640
+         Width           =   615
+      End
+      Begin VB.Shape Shape1 
+         FillColor       =   &H00000080&
+         FillStyle       =   0  'Solid
+         Height          =   195
+         Index           =   0
+         Left            =   60
+         Top             =   2880
+         Width           =   615
+      End
+      Begin VB.Image Image4 
+         Height          =   900
+         Left            =   780
+         Picture         =   "HT91100Test.frx":6366
+         Top             =   2280
+         Width           =   900
+      End
+      Begin VB.Image Image3 
+         Height          =   900
+         Left            =   780
+         Picture         =   "HT91100Test.frx":75B8
+         Top             =   360
+         Width           =   900
+      End
+   End
+   Begin VB.Frame Frame7 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Alternating Speeds"
+      Height          =   5655
+      Left            =   11160
+      TabIndex        =   36
+      Top             =   3960
+      Width           =   2055
+      Begin VB.TextBox txtCycle 
+         Height          =   285
+         Left            =   1560
+         TabIndex        =   66
+         Text            =   "1"
+         Top             =   4680
+         Width           =   375
+      End
+      Begin VB.CommandButton Command4 
+         Caption         =   "Begin Cycling"
+         Height          =   315
+         Left            =   360
+         TabIndex        =   51
+         Top             =   5160
+         Width           =   1335
+      End
+      Begin VB.Frame Frame8 
+         BackColor       =   &H00E0E0E0&
+         Caption         =   "Speed #2"
+         ForeColor       =   &H00FF0000&
+         Height          =   1935
+         Index           =   1
+         Left            =   120
+         TabIndex        =   42
+         Top             =   2520
+         Width           =   1935
+         Begin VB.OptionButton optspd2ccw 
+            Caption         =   "CCW Rotation"
+            Height          =   195
+            Index           =   0
+            Left            =   120
+            TabIndex        =   65
+            Top             =   1560
+            Width           =   1395
+         End
+         Begin VB.OptionButton optspd2cw 
+            Caption         =   "CW Rotation"
+            Height          =   195
+            Index           =   0
+            Left            =   120
+            TabIndex        =   64
+            Top             =   1320
+            Value           =   -1  'True
+            Width           =   1395
+         End
+         Begin VB.TextBox Text5 
+            Alignment       =   2  'Center
+            Height          =   285
+            Index           =   1
+            Left            =   240
+            TabIndex        =   49
+            Text            =   "1"
+            ToolTipText     =   "Range 0-30,000 seconds"
+            Top             =   840
+            Width           =   555
+         End
+         Begin VB.TextBox Text3 
+            Alignment       =   2  'Center
+            Height          =   255
+            Index           =   1
+            Left            =   240
+            TabIndex        =   44
+            Text            =   "1"
+            ToolTipText     =   "Range 1-10 seconds"
+            Top             =   240
+            Width           =   375
+         End
+         Begin VB.TextBox Text4 
+            Alignment       =   2  'Center
+            Height          =   255
+            Index           =   1
+            Left            =   240
+            TabIndex        =   43
+            Text            =   "3500"
+            ToolTipText     =   "Range 1-3570 RPM"
+            Top             =   540
+            Width           =   495
+         End
+         Begin VB.Label Label5 
+            Caption         =   "Delay Secs"
+            Height          =   255
+            Index           =   1
+            Left            =   840
+            TabIndex        =   50
+            Top             =   840
+            Width           =   975
+         End
+         Begin VB.Label Label3 
+            Caption         =   "Acceleration"
+            Height          =   255
+            Index           =   1
+            Left            =   720
+            TabIndex        =   46
+            Top             =   300
+            Width           =   975
+         End
+         Begin VB.Label Label4 
+            Caption         =   "RPM"
+            Height          =   255
+            Index           =   1
+            Left            =   780
+            TabIndex        =   45
+            Top             =   600
+            Width           =   675
+         End
+      End
+      Begin VB.Frame Frame8 
+         BackColor       =   &H00E0E0E0&
+         Caption         =   "Speed #1"
+         ForeColor       =   &H00FF00FF&
+         Height          =   2055
+         Index           =   0
+         Left            =   60
+         TabIndex        =   37
+         Top             =   300
+         Width           =   1935
+         Begin VB.OptionButton optspd1cw 
+            Caption         =   "CW Rotation"
+            Height          =   195
+            Index           =   3
+            Left            =   120
+            TabIndex        =   63
+            Top             =   1320
+            Value           =   -1  'True
+            Width           =   1395
+         End
+         Begin VB.OptionButton optspd1ccw 
+            Caption         =   "CCW Rotation"
+            Height          =   195
+            Index           =   2
+            Left            =   120
+            TabIndex        =   62
+            Top             =   1560
+            Width           =   1395
+         End
+         Begin VB.TextBox Text5 
+            Alignment       =   2  'Center
+            Height          =   285
+            Index           =   0
+            Left            =   240
+            TabIndex        =   47
+            Text            =   "10"
+            ToolTipText     =   "Range 0-30,000 seconds"
+            Top             =   840
+            Width           =   555
+         End
+         Begin VB.TextBox Text4 
+            Alignment       =   2  'Center
+            Height          =   255
+            Index           =   0
+            Left            =   240
+            TabIndex        =   40
+            Text            =   "500"
+            ToolTipText     =   "Range 1-3570 RPM"
+            Top             =   540
+            Width           =   495
+         End
+         Begin VB.TextBox Text3 
+            Alignment       =   2  'Center
+            Height          =   255
+            Index           =   0
+            Left            =   240
+            TabIndex        =   38
+            Text            =   "1"
+            ToolTipText     =   "Range 1-10 seconds"
+            Top             =   240
+            Width           =   375
+         End
+         Begin VB.Label Label5 
+            Caption         =   "Delay Secs"
+            Height          =   255
+            Index           =   0
+            Left            =   840
+            TabIndex        =   48
+            Top             =   900
+            Width           =   915
+         End
+         Begin VB.Label Label4 
+            Caption         =   "RPM"
+            Height          =   255
+            Index           =   0
+            Left            =   780
+            TabIndex        =   41
+            Top             =   600
+            Width           =   675
+         End
+         Begin VB.Label Label3 
+            Caption         =   "Acceleration"
+            Height          =   255
+            Index           =   0
+            Left            =   660
+            TabIndex        =   39
+            Top             =   300
+            Width           =   975
+         End
+      End
+      Begin VB.Label lblnumofcycles 
+         Caption         =   "Number of Cycles"
+         Height          =   255
+         Left            =   120
+         TabIndex        =   67
+         Top             =   4680
+         Width           =   1335
+      End
+   End
+   Begin VB.Frame Frame6 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Your RS232 Port for Shakers"
+      Height          =   4875
+      Left            =   120
+      TabIndex        =   23
+      Top             =   120
+      Width           =   2895
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 11"
+         Height          =   255
+         Index           =   10
+         Left            =   120
+         TabIndex        =   70
+         Top             =   3000
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 10"
+         Height          =   255
+         Index           =   9
+         Left            =   120
+         TabIndex        =   69
+         Top             =   2760
+         Width           =   2535
+      End
+      Begin VB.CommandButton Command5 
+         BackColor       =   &H00808080&
+         Caption         =   "Auto-Find Shakers"
+         Height          =   315
+         Left            =   240
+         TabIndex        =   32
+         ToolTipText     =   "Force comm port search for shakers"
+         Top             =   4440
+         Width           =   2295
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 8"
+         Height          =   255
+         Index           =   7
+         Left            =   120
+         TabIndex        =   31
+         Top             =   2280
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 7"
+         Height          =   255
+         Index           =   6
+         Left            =   120
+         TabIndex        =   30
+         Top             =   2040
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 6"
+         Height          =   255
+         Index           =   5
+         Left            =   120
+         TabIndex        =   29
+         Top             =   1800
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 5"
+         Height          =   255
+         Index           =   4
+         Left            =   120
+         TabIndex        =   28
+         Top             =   1560
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 4"
+         Height          =   255
+         Index           =   3
+         Left            =   120
+         TabIndex        =   27
+         Top             =   1320
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 3"
+         Height          =   255
+         Index           =   2
+         Left            =   120
+         TabIndex        =   26
+         Top             =   1080
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 2"
+         Height          =   255
+         Index           =   1
+         Left            =   120
+         TabIndex        =   25
+         Top             =   840
+         Width           =   2535
+      End
+      Begin VB.OptionButton Option2 
+         BackColor       =   &H00C0C0C0&
+         Caption         =   "Comm Port 1"
+         Height          =   255
+         Index           =   0
+         Left            =   120
+         TabIndex        =   24
+         Top             =   600
+         Width           =   2535
+      End
+   End
+   Begin VB.Frame Frame5 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Get Values"
+      Height          =   2175
+      Left            =   9840
+      TabIndex        =   18
+      Top             =   720
+      Width           =   1635
+      Begin VB.CommandButton Command1 
+         Caption         =   "Current Velocity"
+         Height          =   315
+         Index           =   22
+         Left            =   120
+         TabIndex        =   57
+         Top             =   1020
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Get Text Status"
+         Height          =   315
+         Index           =   20
+         Left            =   120
+         TabIndex        =   55
+         Top             =   1740
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Measured Speed"
+         Height          =   315
+         Index           =   12
+         Left            =   120
+         TabIndex        =   21
+         Top             =   1380
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Velocity"
+         Height          =   315
+         Index           =   11
+         Left            =   120
+         TabIndex        =   20
+         Top             =   660
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Acceleration"
+         Height          =   315
+         Index           =   10
+         Left            =   120
+         TabIndex        =   19
+         Top             =   300
+         Width           =   1395
+      End
+   End
+   Begin VB.Frame Frame4 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Diagnostic Tests"
+      Height          =   1695
+      Left            =   9720
+      TabIndex        =   16
+      Top             =   3600
+      Width           =   1635
+      Begin VB.CommandButton Command1 
+         Caption         =   "Set Top RPM"
+         Height          =   315
+         Index           =   21
+         Left            =   120
+         TabIndex        =   56
+         Top             =   1020
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command3 
+         Caption         =   "Random Cycling"
+         Height          =   315
+         Left            =   120
+         TabIndex        =   33
+         Top             =   300
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Shaft Sensor"
+         Height          =   315
+         Index           =   8
+         Left            =   120
+         TabIndex        =   17
+         Top             =   660
+         Width           =   1395
+      End
+   End
+   Begin VB.Frame Frame3 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Motion Commands"
+      Height          =   1935
+      Left            =   3120
+      TabIndex        =   9
+      Top             =   3000
+      Width           =   2355
+      Begin VB.CommandButton Command1 
+         Caption         =   "Find Home"
+         Height          =   315
+         Index           =   7
+         Left            =   480
+         TabIndex        =   15
+         ToolTipText     =   "Force shaft to home index"
+         Top             =   1020
+         Width           =   1155
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Go"
+         Height          =   315
+         Index           =   1
+         Left            =   480
+         TabIndex        =   11
+         ToolTipText     =   "Begin shaking motion"
+         Top             =   240
+         Width           =   1155
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Stop"
+         Height          =   315
+         Index           =   2
+         Left            =   480
+         TabIndex        =   10
+         ToolTipText     =   "Decelerate to stop"
+         Top             =   660
+         Width           =   1155
+      End
+   End
+   Begin VB.Frame Frame2 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Set Parameters"
+      Height          =   2835
+      Left            =   3120
+      TabIndex        =   4
+      Top             =   120
+      Width           =   2295
+      Begin VB.CheckBox Check2 
+         Caption         =   "Enable Status Text Auto-Send"
+         Height          =   555
+         Left            =   240
+         TabIndex        =   54
+         Top             =   3600
+         Value           =   1  'Checked
+         Width           =   1215
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "Find Home Index After Stopping"
+         Height          =   615
+         Left            =   240
+         TabIndex        =   52
+         Top             =   2880
+         Value           =   1  'Checked
+         Width           =   1215
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Set Direction"
+         Height          =   315
+         Index           =   6
+         Left            =   120
+         TabIndex        =   14
+         Top             =   2520
+         Width           =   1395
+      End
+      Begin VB.OptionButton Option1 
+         Caption         =   "CCW Rotation"
+         Height          =   195
+         Index           =   1
+         Left            =   120
+         TabIndex        =   13
+         Top             =   2220
+         Width           =   1395
+      End
+      Begin VB.OptionButton Option1 
+         Caption         =   "CW Rotation"
+         Height          =   195
+         Index           =   0
+         Left            =   120
+         TabIndex        =   12
+         Top             =   1980
+         Value           =   -1  'True
+         Width           =   1395
+      End
+      Begin VB.TextBox Text2 
+         Alignment       =   2  'Center
+         Height          =   285
+         Left            =   120
+         TabIndex        =   8
+         Text            =   "11000"
+         ToolTipText     =   "Range 1-3570"
+         Top             =   1140
+         Width           =   615
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Set Velocity"
+         Height          =   315
+         Index           =   5
+         Left            =   120
+         TabIndex        =   7
+         ToolTipText     =   "Range 0-3570 RPM"
+         Top             =   1500
+         Width           =   1395
+      End
+      Begin VB.TextBox Text1 
+         Alignment       =   2  'Center
+         Height          =   285
+         Left            =   120
+         TabIndex        =   6
+         Text            =   "5"
+         ToolTipText     =   "Range 0-10 seconds"
+         Top             =   360
+         Width           =   375
+      End
+      Begin VB.CommandButton Command1 
+         Caption         =   "Set Acceleration"
+         Height          =   315
+         Index           =   3
+         Left            =   120
+         TabIndex        =   5
+         Top             =   720
+         Width           =   1395
+      End
+      Begin VB.Label Label2 
+         Caption         =   "Seconds"
+         Height          =   255
+         Left            =   600
+         TabIndex        =   34
+         Top             =   420
+         Width           =   735
+      End
+      Begin VB.Label Label1 
+         Caption         =   "RPM"
+         Height          =   255
+         Left            =   840
+         TabIndex        =   22
+         Top             =   1200
+         Width           =   435
+      End
+   End
+   Begin VB.Frame Frame1 
+      BackColor       =   &H00E0E0E0&
+      Caption         =   "Get Product Info"
+      Height          =   1815
+      Left            =   11640
+      TabIndex        =   1
+      Top             =   1080
+      Width           =   1635
+      Begin VB.CommandButton Command1 
+         BackColor       =   &H00C0C0FF&
+         Caption         =   "Get Software Version #"
+         Height          =   495
+         Index           =   13
+         Left            =   120
+         TabIndex        =   35
+         Top             =   1200
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         BackColor       =   &H00FFFFFF&
+         Caption         =   "Get Serial #"
+         Height          =   315
+         Index           =   4
+         Left            =   120
+         TabIndex        =   3
+         Top             =   840
+         Width           =   1395
+      End
+      Begin VB.CommandButton Command1 
+         BackColor       =   &H00FFFFFF&
+         Caption         =   "Read Product Type"
+         Height          =   495
+         Index           =   0
+         Left            =   120
+         TabIndex        =   2
+         Top             =   300
+         Width           =   1395
+      End
+   End
+   Begin VB.Timer Timer1 
+      Interval        =   50
+      Left            =   6600
+      Top             =   5640
+   End
+   Begin VB.ListBox List1 
+      BackColor       =   &H00FFFFFF&
+      Height          =   4545
+      Left            =   5520
+      TabIndex        =   0
+      Top             =   120
+      Width           =   1815
+   End
+   Begin VB.PictureBox MSComm1 
+      Height          =   480
+      Left            =   6240
+      ScaleHeight     =   420
+      ScaleWidth      =   1140
+      TabIndex        =   75
+      Top             =   6600
+      Width           =   1200
+   End
+   Begin VB.Label Label8 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Software Version 1.0"
+      ForeColor       =   &H00404040&
+      Height          =   255
+      Left            =   120
+      TabIndex        =   60
+      Top             =   5040
+      Width           =   2175
+   End
+   Begin VB.Label Label6 
+      Caption         =   "Incoming RS232 Text"
+      ForeColor       =   &H00808080&
+      Height          =   195
+      Left            =   5520
+      TabIndex        =   53
+      Top             =   4680
+      Width           =   1755
+   End
+End
+Attribute VB_Name = "BisShaker"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+
+Private Lastrpm As Integer
+Const Bar1 = 1
+Const Bar2 = 3
+Const Bar3 = 8
+Const Bar4 = 15
+Const GoodRPM = 161
+
+Private Sub GetRS232Data()
+  Dim i As Integer
+  Dim StatusLabel As String
+ 
+  If MSComm2.PortOpen Then
+    'only check if port already open.
+    'check for incoming command data
+    IncomingString = IncomingString + MSComm2.Input
+  End If
+  
+  'check for a CR character in string, indicating completion
+  If InStr(IncomingString, vbCr) Then
+    'found a CR inside the string, meaning a command should be ready
+    i = InStr(IncomingString, vbCr)   'i is now point in string the CR is found
+    FinishedString = Trim(Left(IncomingString, i - 1))
+    'now reset incomingstring and remove the first CR, keeping any other incoming data
+    'that might have also arrived
+    IncomingString = Right(IncomingString, Len(IncomingString) - i)
+     
+    'show what came in
+    Call LogMessage(FinishedString)
+  End If
+End Sub
+
+Private Sub Check1_Click()
+  If MSComm2.PortOpen Then
+    If Check1.Value = 1 Then
+      MSComm2.Output = "E" + vbCr 'enable home finding
+    Else
+      MSComm2.Output = "C" + vbCr 'disable home finding
+    End If
+  End If
+End Sub
+
+Private Sub Check2_Click()
+  If MSComm2.PortOpen Then
+    If Check2.Value = 1 Then
+      MSComm2.Output = "O" + vbCr 'enable text status message auto sent
+    Else
+      MSComm2.Output = "P" + vbCr 'disable text status messages sent
+    End If
+  End If
+
+End Sub
+
+Private Sub Command1_Click(Index As Integer)
+  Dim i As Integer
+  If MSComm2.PortOpen = False Then Exit Sub
+  Select Case Index
+    Case 21 'set top speed using pot
+      'MSComm2.Output = "A5" + vbCr
+      MSComm2.Output = "M15000" + vbCr
+      'MSComm2.Output = "G" + vbCr
+      Frame9.Visible = True
+      SetTopSpeed = 1
+    
+    Case 20 'get text staus
+      MSComm2.Output = "X" + vbCr
+    
+    Case 0 'get product data
+      MSComm2.Output = "Z" + vbCr
+    
+    Case 1 'send go command /////////G->M
+      MSComm2.Output = Chr(3) + Chr(32)
+      delay (500)
+      MSComm2.Output = vbCr
+      delay (500)
+      MSComm2.Output = "M11000" + vbCr
+    
+    Case 2 'send stop command
+      MSComm2.Output = "ESC" + vbCr
+      SetTopSpeed = 0
+      Frame9.Visible = False
+      LifeTest = False
+          
+    Case 3 'send acceleration
+      MSComm2.Output = "A" + Text1.Text + vbCr
+    
+    Case 4 'get serial number
+      MSComm2.Output = Hex(20) + vbCr
+      
+    Case 5 'send RPM
+      MSComm2.Output = "M" + Text2.Text + vbCr
+    
+    Case 6 'set direction
+      If Option1(0) Then
+        MSComm2.Output = "+" + "0" + vbCr
+      Else
+        MSComm2.Output = "-" + "0" + vbCr
+      End If
+      
+    Case 7 'find home
+      MSComm2.Output = "F" + vbCr
+    
+    Case 8 'Test sensor, blinks LED each time sensor sees rotating index mark
+      MSComm2.Output = "T" + vbCr
+    
+    Case 10 'get acceleration value
+      MSComm2.Output = "?A" + vbCr
+    
+    Case 11 'get velocity value
+      MSComm2.Output = "?V" + vbCr
+    
+    Case 12 'get measured speed value
+      MSComm2.Output = "?R" + vbCr
+    
+    Case 22 'get current commanded velocity value
+      MSComm2.Output = "?W" + vbCr
+    
+    Case 13 'get software version number
+      MSComm2.Output = "X" + vbCr
+    
+  End Select
+End Sub
+
+
+Private Sub Command3_Click()
+  Dim rpm As Integer
+  Dim Accel As Integer
+  Dim delaytime As Integer
+  Dim StartTimer As Long
+  LifeTest = True
+  Randomize
+  While LifeTest
+    rpm = Int((Rnd * 3569) + 1)
+    Accel = Int((Rnd * 10))
+    Text1 = Str(Accel)
+    Text2 = Str(rpm)
+    delaytime = Int((Rnd * 7) + 3) * 1000
+    MSComm2.Output = "V" + Trim(Str(rpm)) + vbCr
+    MSComm2.Output = "A" + Trim(Str(Accel)) + vbCr
+        
+    If rpm < 200 Then
+      MSComm2.Output = "S" + vbCr
+      delaytime = delaytime + 3000
+    Else
+      MSComm2.Output = "G" + vbCr
+    End If
+    
+    StartTimer = GetCurrentMSEC
+    While ((GetCurrentMSEC - StartTimer) < delaytime) And LifeTest
+      DoEvents
+    Wend
+  
+  Wend
+  
+End Sub
+
+Private Sub Command4_Click()
+  'begin shaker unit internal cycling mode
+  Dim mycycle As Integer, i As Integer, direction As Boolean
+  mycycle = CInt(txtCycle.Text)
+  For i = 0 To mycycle
+  MSComm2.Output = "A" + Text3(0).Text + vbCr 'acceleration speed1
+  delay (100)
+  MSComm2.Output = "V" + Text4(0).Text + vbCr
+  delay (100)
+ ' MSComm2.Output = "J" + Text5(0).Text + vbCr
+    If direction = True Then 'optspd1ccw(2) Then
+        MSComm2.Output = "+" + vbCr
+        direction = False
+    Else
+        MSComm2.Output = "-" + vbCr
+        direction = True
+    End If
+  delay (100)
+  MSComm2.Output = "G" + vbCr
+  MSComm2.Output = "" + vbCr
+  'MSComm2.Output = "+" + vbCr '+ Text5(0).Text
+  'delay (100)
+  MSComm2.Output = "A" + Text3(1).Text + vbCr
+  delay (100)
+  MSComm2.Output = "V" + Text4(1).Text + vbCr
+  delay (100)
+  MSComm2.Output = "M" + Text5(1).Text + vbCr
+  delay (100)
+   'If optspd2ccw(0) Then
+    '    MSComm2.Output = "+" + vbCr
+    'Else
+    '    MSComm2.Output = "-" + vbCr
+    'End If
+  MSComm2.Output = "-" + vbCr '+ Text5(0).Text
+  delay (100)
+  MSComm2.Output = "G" + vbCr
+ Next
+  'I need to change the direction of motion making it different in the
+  ' two cycles
+  'MSComm2.Output = "N" + vbCr
+End Sub
+
+Private Sub Command5_Click()
+  'auto-find the comm ports that have an active shaker attached
+  Dim j As Integer
+  Frame1.Visible = False
+  Frame2.Visible = False
+  Frame3.Visible = False
+  Frame4.Visible = False
+  Frame5.Visible = False
+  Frame7.Visible = False
+  Call FindCommPorts
+  'reshow display
+  
+  For j = 1 To MAX_COMM_PORTS
+    If Len(ActiveCommPort(j)) = 3 Then
+      'must be a bad or non-existent port
+      Option2(j - 1).ForeColor = &HC0C0C0
+      Option2(j - 1).Caption = "Port " + Str(j) + " disabled/nonexistent"
+    ElseIf Len(ActiveCommPort(j)) > 5 Then
+      'must be a good active shaker here
+      Option2(j - 1).ForeColor = &H0
+      Option2(j - 1).Caption = "Port " + Str(j) + ", Vortexer SN: " + ActiveCommPort(j)
+      Frame1.Visible = True
+      Frame2.Visible = True
+      Frame3.Visible = True
+      Frame4.Visible = True
+      Frame5.Visible = True
+      Frame7.Visible = True
+    Else
+      'must be a good active shaker here
+      Option2(j - 1).ForeColor = &H0
+      Option2(j - 1).Caption = " Comm Port " + Str(j)
+      Frame1.Visible = True
+      Frame2.Visible = True
+      Frame3.Visible = True
+      Frame4.Visible = True
+      Frame5.Visible = True
+      Frame7.Visible = True
+    End If
+  Next j
+  'enable the item that is first on the list
+  For j = 1 To MAX_COMM_PORTS
+    If Len(ActiveCommPort(j)) >= 5 Then
+      'must be a good active shaker here
+      Option2(j - 1) = True
+      Exit Sub
+    End If
+  Next j
+End Sub
+
+Private Sub Command6_Click()
+  SetTopSpeed = 0
+  MSComm2.Output = "S" + vbCr
+  Frame9.Visible = False
+End Sub
+
+Private Sub Form_Load()
+  Frame1.Visible = False
+  Frame2.Visible = False
+  Frame3.Visible = False
+  Frame4.Visible = False
+  Frame5.Visible = False
+  Frame7.Visible = False
+  Frame9.Visible = False
+End Sub
+
+
+
+
+
+
+Private Sub Option2_Click(Index As Integer)
+  'manually set a comm port to be used
+  Dim j As Integer
+  Frame1.Visible = False
+  Frame2.Visible = False
+  Frame3.Visible = False
+  Frame4.Visible = False
+  Frame5.Visible = False
+  Frame7.Visible = False
+  ActiveCommPort(Index + 1) = ""
+  'finds a shaker at an RS232 port
+  'goes to port 16 as a maximum.
+  'first, find a port to open, then send the serial number command to see if active
+  
+  On Error GoTo badcommport
+  If MSComm2.PortOpen = True Then
+    MSComm2.PortOpen = False
+  End If
+  MSComm2.CommPort = Index + 1
+  Err.Clear
+  On Error GoTo badcommport
+  MSComm2.PortOpen = True
+  Frame1.Visible = True
+  Frame2.Visible = True
+  Frame3.Visible = True
+  Frame4.Visible = True
+  Frame5.Visible = True
+  Frame7.Visible = True
+  'if we are here, it means this port has been opened okay.
+  'now send off a serial number request command and see what gets returned.
+  FinishedString = "" 'default incoming data string to null
+  MSComm2.Output = Hex(20) + vbCr
+  Call delay(250) 'wait 250 msec to get a response
+  Call GetRS232Data
+  If Len(FinishedString) = 5 Then
+    'yes, looks like proper data length coming in
+    ActiveCommPort(Index + 1) = FinishedString
+  End If 'if nothing came in, FinishedString will be still null
+  GoTo alldone
+
+badcommport: 'if a bad comm port, it means that probably does not exist
+  On Error GoTo 0
+  Err.Clear
+  ActiveCommPort(Index + 1) = "BAD"
+
+alldone:
+  For j = 1 To MAX_COMM_PORTS
+    If Len(ActiveCommPort(j)) = 3 Then
+      'must be a bad or non-existent port
+      Option2(j - 1).ForeColor = &HC0C0C0
+      Option2(j - 1).Caption = "Port " + Str(j) + " disabled/nonexistent"
+    ElseIf Len(ActiveCommPort(j)) >= 5 Then
+      'must be a good active shaker here
+      Option2(j - 1).ForeColor = &H0
+      Option2(j - 1).Caption = "Port " + Str(j) + ", Vortexer SN: " + ActiveCommPort(j)
+   ' Else
+      'must be a good active shaker here
+    '  Option2(j - 1).ForeColor = &H0
+      'Option2(j - 1).Caption = " Comm Port " + Str(j)
+    End If
+  Next j
+ 
+
+End Sub
+
+
+Private Sub Timer1_Timer()
+  Timer1.Enabled = False
+  Call GetRS232Data
+  Timer1.Enabled = True
+End Sub
+
+Private Sub LogMessage(message As String)
+  If List1.ListCount > 500 Then
+    List1.RemoveItem (1)
+  End If
+  List1.AddItem message
+  If List1.ListCount > 7 Then List1.TopIndex = List1.ListCount - 7
+  DoEvents
+End Sub
+
+Public Sub FindCommPorts()
+
+  Dim PortTrial As Integer
+  Dim j As Integer
+
+  For j = 1 To MAX_COMM_PORTS 'clear all shaker table serial numbers from the comm port list
+      ActiveCommPort(j) = ""
+  Next j
+  'finds a shaker at an RS232 port
+  'goes to port 16 as a maximum.
+  'first, find a port to open, then send the serial number command to see if active
+  PortTrial = 1
+  
+opencommport:
+  On Error GoTo badcommport
+  If MSComm2.PortOpen = True Then
+    MSComm2.PortOpen = False
+  End If
+  MSComm2.CommPort = PortTrial
+  Err.Clear
+  On Error GoTo badcommport
+  MSComm2.PortOpen = True
+  'if we are here, it means this port has been opened okay.
+  'now send off a serial number request command and see what gets returned.
+  FinishedString = "" 'default incoming data string to null
+  MSComm2.Output = Chr$(ETX)
+  
+  '"Y" + vbCr
+  Call delay(250) 'wait 250 msec to get a response
+  MSComm2.Output = Chr$(SP)
+   Call delay(250) 'wait 250 msec to get a response
+  MSComm2.Output = Chr$(CR)
+  Call GetRS232Data
+  If Len(FinishedString) >= 5 Then
+    'yes, looks like proper data length coming in
+    ActiveCommPort(PortTrial) = FinishedString
+  End If 'if nothing came in, FinishedString will be still null
+  MSComm2.PortOpen = False
+  PortTrial = PortTrial + 1
+  If PortTrial <= MAX_COMM_PORTS Then
+    GoTo opencommport
+  End If
+  'all done with testing all comm ports, so be done
+  GoTo settofoundport
+  
+
+badcommport: 'if a bad comm port, it means that probably does not exist
+  On Error GoTo 0
+  Err.Clear
+  ActiveCommPort(PortTrial) = "BAD"
+  PortTrial = PortTrial + 1
+  If PortTrial <= MAX_COMM_PORTS Then
+    Resume opencommport
+  End If
+  
+  
+settofoundport: 'set port number at first found active shaker port
+  For j = 1 To MAX_COMM_PORTS
+    If Len(ActiveCommPort(j)) >= 5 Then
+      MSComm2.CommPort = j
+      MSComm2.PortOpen = True
+      j = MAX_COMM_PORTS + 1
+    End If
+  Next j
+End Sub
+
+Private Sub Timer2_Timer()
+  Dim gotthem As Integer
+  Dim RcvdRPM As String
+  Dim Sent As String
+  Dim rpm As Integer
+  
+  If SetTopSpeed = 0 Then Exit Sub
+  Timer2.Enabled = False
+  FinishedString = ""
+  MSComm2.Output = "?R" + vbCr 'ask for the rpm value
+  While Len(FinishedString) = 0
+    Call GetRS232Data
+  Wend
+  RcvdRPM = Right(FinishedString, Len(FinishedString) - 2)
+  rpm = Val(RcvdRPM)
+    
+  Shape1(0).FillColor = &H80&
+  Shape1(1).FillColor = &H80&
+  Shape1(4).FillColor = &H80&
+  Shape1(3).FillColor = &H80&
+  Shape1(2).FillColor = &H80&
+  Shape1(5).FillColor = &H80&
+  Shape1(6).FillColor = &H8080&
+  Shape1(7).FillColor = &H8080&
+  Shape1(8).FillColor = &H8080&
+  Shape1(9).FillColor = &H8080&
+  Shape1(10).FillColor = &H8000&
+  Image3.Visible = False
+  Image4.Visible = False
+  
+  If rpm = GoodRPM Then
+    Shape1(10).FillColor = &HFF00&
+  End If
+  If rpm > GoodRPM Then
+    Image4.Visible = True
+    Shape1(7).FillColor = &HFFFF&
+  End If
+  If rpm < GoodRPM Then
+    Image3.Visible = True
+    Shape1(8).FillColor = &HFFFF&
+  End If
+  If rpm > (GoodRPM + Bar1) Then
+    Shape1(6).FillColor = &HFFFF&
+  End If
+  If rpm > (GoodRPM + Bar2) Then
+    Shape1(4).FillColor = &HFF&
+  End If
+  If rpm > (GoodRPM + Bar3) Then
+    Shape1(1).FillColor = &HFF&
+  End If
+  If rpm > (GoodRPM + Bar4) Then
+    Shape1(0).FillColor = &HFF&
+  End If
+  If rpm < (GoodRPM - Bar1) Then
+    Shape1(9).FillColor = &HFFFF&
+  End If
+  If rpm < (GoodRPM - Bar2) Then
+    Shape1(3).FillColor = &HFF&
+  End If
+  If rpm < (GoodRPM - Bar3) Then
+    Shape1(2).FillColor = &HFF&
+  End If
+  If rpm < (GoodRPM - Bar4) Then
+    Shape1(5).FillColor = &HFF&
+  End If
+  
+  Timer2.Enabled = True
+
+
+End Sub
+
